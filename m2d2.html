@@ -61,12 +61,20 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             - The album duration
             - etc
          */
+            body{
+                background-color: rgb(31, 31, 31);
+            }
 			.album-container {
-				/*width: 300px;
-				height: 300px;*/
+                height: 100%;
+			}
+            .worst-container{
+                max-height: 50%;
+            }
+            .favorite-album-container {
+				width: 25%;
 			}
 			.album-cover {
-                max-width:100%;
+                width:100%;
                 height: auto;
 			}
 			.album-title {
@@ -81,6 +89,19 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 			}
 			.album-Tracklist {
 			}
+            .section{
+                margin:1ch;
+            }
+            .tapestry{
+                width:100vw;
+                height: 100vw;
+            }
+            .tapestry-cell{
+                width:20%;
+                height:20%;
+                max-width: 20%;
+                max-height: 20%;
+            }
 		</style>
 	</head>
 	<body>
@@ -88,8 +109,8 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             Implement a navigation bar using the bootstrap component
             This navigation bar must be linked to every section in your page
         -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#"> we <3 metal</a>
+		<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
+			<a class="navbar-brand" href="#"> we "<3" metal</a>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -104,15 +125,15 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 			<div class="collapse navbar-collapse" id="navbarText">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#"
+						<a class="nav-link" href="#aboutMe"
 							>About me <span class="sr-only">(current)</span></a
 						>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Best Almbums</a>
+						<a class="nav-link" href="#best">Best Album</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Worst Albums</a>
+						<a class="nav-link" href="#worst">Worst Albums</a>
 					</li>
 				</ul>
 				<!--span class="navbar-text"> Navbar text with an inline element </span-->
@@ -131,14 +152,14 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 				<div class="col col-12 col-sm-6 col-md-4 col-lg-3">
 					<div class="album-container card">
 						<img
-							class="cover card-img-top"
+							class="album-cover card-img-top"
 							src="images/Rhapsody_symphony_of_the_enchanted_lands.jpg"
 						/>
 						<h5 class="album-title">symphony of the enchanted lands</h3>
 						<p class="album-authors">Rhapsodhy of Fire</p>
 						<p class="album-lenght">55:42</p>
 						<p class="album-genre">Symphonic Metal</p>
-						<ol class="album-Tracklist list-group ">
+						<!--ol class="album-Tracklist list-group ">
                             <li class="list-group-item">"Epicus Furor" ("Epic Fury")	1:15</li>
                             <li class="list-group-item">"Emerald Sword"	4:21
                             <li class="list-group-item">"Wisdom of the Kings"	4:29
@@ -161,17 +182,17 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                                     <li class="list-group-item">IV. "The Immortal Fire"	13:17</li>
                                 </ol>
                             </li>
-                        </ol>
+                        </ol-->
 					</div>
 				</div>
-				<div class="col col-6 col-md-4 col-lg-3">
+				<div class="col col-12 col-sm-6 col-md-4 col-lg-3">
 					<div class="album-container card">
-						<img class="cover card-img-top" src="images/Visions_-_Stratovarius2.jpg" />
+						<img class="album-cover card-img-top" src="images/Visions_-_Stratovarius2.jpg" />
 						<h3 class="album-title">Visions</h3>
 						<p class="album-authors">Stratovarius</p>
 						<p class="album-lenght">61:01</p>
 						<p class="album-genre">Power Metal</p>
-						<ol class="album-Tracklist list-group">
+						<!--ol class="album-Tracklist list-group">
                             <li class="list-group-item">"The Kiss of Judas"</li>
                             <li class="list-group-item">"Black Diamond"</li>
                             <li class="list-group-item">"Forever Free"</li>
@@ -182,17 +203,17 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                             <li class="list-group-item">"Paradise"</li>
                             <li class="list-group-item">"Coming Home"</li>
                             <li class="list-group-item">"Visions (Southern Cross)"</li>
-                        </ol>
+                        </ol-->
 					</div>
 				</div>
-				<div class="col col-6 col-md-4 col-lg-3">
+				<div class="col col-12 col-sm-6 col-md-4 col-lg-3">
 					<div class="album-container card">
-						<img class="cover card-img-top" src="images/SonataArctica_Ecliptica.jpg" />
+						<img class="album-cover card-img-top" src="images/SonataArctica_Ecliptica.jpg" />
 						<h3 class="album-title">Ecliptica</h3>
 						<p class="album-authors">Sonata Arctica</p>
 						<p class="album-lenght">47:11</p>
 						<p class="album-genre">Power Metal</p>
-						<ol class="album-Tracklist list-group">
+						<!--ol class="album-Tracklist list-group">
                             <li class="list-group-item">"Blank File"</li>
                             <li class="list-group-item">"My Land"</li>
                             <li class="list-group-item">"8th Commandment"</li>
@@ -203,17 +224,17 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                             <li class="list-group-item">"UnOpened"</li>
                             <li class="list-group-item">"Picturing the Past (Kakko, Liimatainen)"</li>
                             <li class="list-group-item">"Destruction Preventer"</li>
-                        </ol>
+                        </ol-->
 					</div>
 				</div>
-				<div class="col col-6 col-md-4 col-lg-3">
+				<div class="col col-12 col-sm-6 col-md-4 col-lg-3">
 					<div class="album-container card">
-						<img class="cover card-top-img" src="images/Europe-the_final_countdown.jpg" />
+						<img class="album-cover card-top-img" src="images/Europe-the_final_countdown.jpg" />
 						<h3 class="album-title">The Final Countdown</h3>
 						<p class="album-authors">Europe</p>
 						<p class="album-lenght">39:58</p>
 						<p class="album-genre">Glam Metal</p>
-						<ol class="album-Tracklist list-group">
+						<!--ol class="album-Tracklist list-group">
                             <li class=list-group-item>side one
                                 <ol class="list-group">
                                     <li class=list-group-item>"The Final Countdown"</li>
@@ -232,7 +253,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                                     <li class=list-group-item>"Love Chaser"</li>
                                 </ol>
                             </li>
-                        </ol>
+                        </ol-->
 					</div>
 				</div>
 			</div>
@@ -249,36 +270,142 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             - Tracklist
             - ... And whatever you think it's interesting about it!
         -->
-		<!--div class="album-container card">
-			<img class="cover" src="" />
-			<h3 class="album-title">Title</h3>
-			<p class="album-authors"></p>
-			<p class="album-lenght"></p>
-			<p class="album-genre"></p>
-			<ol class="album-Tracklist"></ol>
-		</div-->
-
+        <div class="row section">
+            <div class="favorite-album-container card col col-12 col-md-6">
+                <a id="best"> <img
+                    class="album-cover card-img-top"
+                    src="images/Rhapsody_symphony_of_the_enchanted_lands.jpg"
+                /></a>
+                <h5 class="album-title">symphony of the enchanted lands</h3>
+                <p class="album-authors">Rhapsodhy of Fire</p>
+                <p class="album-lenght">55:42</p>
+                <p class="album-genre">Symphonic Metal</p>
+                <ol class="album-Tracklist list-group ">
+                    <li class="list-group-item">"Epicus Furor" ("Epic Fury")	1:15</li>
+                    <li class="list-group-item">"Emerald Sword"	4:21
+                    <li class="list-group-item">"Wisdom of the Kings"	4:29
+                    <li class="list-group-item">"Heroes of the Lost Valley"
+                        <ol class="list-group">
+                            <li class="list-group-item">"Entering the Waterfalls' Realm"</li>
+                            <li class="list-group-item">"The Dragon's Pride"	2:05</li>
+                        </ol>
+                    </li>
+                    <li class="list-group-item">"Eternal Glory"	7:29 </li>
+                    <li class="list-group-item">"Beyond the Gates of Infinity"	7:23 </li>
+                    <li class="list-group-item">"Wings of Destiny"	4:28</li>
+                    <li class="list-group-item">"The Dark Tower of Abyss"	6:47</li>
+                    <li class="list-group-item">"Riding the Winds of Eternity"	4:13</li>
+                    <li class="list-group-item">"Symphony of Enchanted Lands"
+                        <ol class="listGroup">
+                            <li class="list-group-item"> "Tharos' Last Flight" </li>
+                            <li class="list-group-item"> II. "Hymn of the Warrior"</li>
+                            <li class="list-group-item"> "Rex Tremende"</li>
+                            <li class="list-group-item">IV. "The Immortal Fire"	13:17</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        
 		<!-- EXERCISE 5
             Worst album list! Find out the music you don't really like or you find overrated and list it
             in this "hall of shame" chart!
         -->
-
+        
+            <div class="row col col-12 col-md-6">
+                <a id="worst"></a><div class="album-container worst-container card col col-12 col-md-6 col-lg-4"></a>
+                    <img
+                        class="album-cover card-img-top"
+                        src="images/poo.jpg"
+                    />
+                    <h5 class="album-title">I dont really know</h3>
+                    <p class="album-authors">idk</p>
+                    <p class="album-lenght">too long</p>
+                    <p class="album-genre">is suffering a genre?</p>
+                </div>
+                <div class="album-container worst-container card col col-12 col-md-6 col-lg-4">
+                    <img
+                        class="album-cover card-img-top"
+                        src="images/poo.jpg"
+                    />
+                    <h5 class="album-title">I dont really know</h3>
+                    <p class="album-authors">idk</p>
+                    <p class="album-lenght">too long</p>
+                    <p class="album-genre">is suffering a genre?</p>
+                </div>
+                <div class="album-container worst-container card col col-12 col-md-6 col-lg-4">
+                    <img
+                        class="album-cover card-img-top"
+                        src="images/poo.jpg"
+                    />
+                    <h5 class="album-title">I dont really know</h3>
+                    <p class="album-authors">idk</p>
+                    <p class="album-lenght">too long</p>
+                    <p class="album-genre">is suffering a genre?</p>
+                </div>
+                <div class="album-container worst-container card col col-12 col-md-6 col-lg-4">
+                    <img
+                        class="album-cover card-img-top"
+                        src="images/poo.jpg"
+                    />
+                    <h5 class="album-title">I dont really know</h3>
+                    <p class="album-authors">idk</p>
+                    <p class="album-lenght">too long</p>
+                    <p class="album-genre">is suffering a genre?</p>
+                </div>
+            </div>
+        </div>
 		<!-- EXERCISE 6
             Do you have any musician / band you admire or you are fan of?
             This section is dedicated to him / her / them!
             Feel free to experiment in this part of the page.
         -->
-
+            <div class="jumbotron">
+                    <a id="aboutMe"> <h1> about my tastes</h1> </a>
+                    my first metal albums were lent to me by a dear friend during high school and are all on this page
+                    i do not have a very strong musical taste but i have a preference towards rock and metal.
+            </div>
 		<!-- EXERCISE 7
             Just covers!
             Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
             Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
         -->
+            <div id="tapestry" class="tapestry">
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/poo.jpg">
+                <img class="tapestry-cell" src="images/Rhapsody_symphony_of_the_enchanted_lands.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/SonataArctica_Ecliptica.jpg"/>
+                <img class="tapestry-cell" src="images/Visions_-_Stratovarius2.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/SonataArctica_Ecliptica.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/SonataArctica_Ecliptica.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
+                <img class="tapestry-cell" src="images/SonataArctica_Ecliptica.jpg"/>
+                <img class="tapestry-cell" src="images/Europe-the_final_countdown.jpg"/>
 
+
+            </div>
 		<!-- EXERCISE 8
             Implement a footer with some information / social links
         -->
-
+        <footer>
+            <a href="https://www.facebook.com/rhapsodyoffire/">facebook page of the Rhapsody of fire band</a>
+        </footer>
 		<!-- EXTRA:
          EXERCISE 9
             Create album details that are going to be toggled on and off by clicking on the album image
