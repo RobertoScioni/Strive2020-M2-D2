@@ -105,6 +105,9 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             .btn-primary{
                 background-color:rgb(20, 20, 20);
             }
+            .best-and-worst{
+                height: fit-content;
+            }
 		</style>
 	</head>
 	<body>
@@ -273,88 +276,90 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             - Tracklist
             - ... And whatever you think it's interesting about it!
         -->
-        <div class="row section">
-            <div class="favorite-album-container card col col-12 col-md-6">
-                <a id="best"> <img
-                    class="album-cover card-img-top"
-                    src="images/Rhapsody_symphony_of_the_enchanted_lands.jpg"
-                /></a>
-                <h5 class="album-title">symphony of the enchanted lands</h3>
-                <p class="album-authors">Rhapsodhy of Fire</p>
-                <p class="album-lenght">55:42</p>
-                <p class="album-genre">Symphonic Metal</p>
-                <p class="btn btn-primary" data-toggle="collapse" href="#tracks">tracks</p>
-                <ol id="tracks" class="album-Tracklist list-group ">
-                    <li class="list-group-item">"Epicus Furor" ("Epic Fury")	1:15</li>
-                    <li class="list-group-item">"Emerald Sword"	4:21
-                    <li class="list-group-item">"Wisdom of the Kings"	4:29
-                    <li class="list-group-item">"Heroes of the Lost Valley"
-                        <ol class="list-group">
-                            <li class="list-group-item">"Entering the Waterfalls' Realm"</li>
-                            <li class="list-group-item">"The Dragon's Pride"	2:05</li>
-                        </ol>
-                    </li>
-                    <li class="list-group-item">"Eternal Glory"	7:29 </li>
-                    <li class="list-group-item">"Beyond the Gates of Infinity"	7:23 </li>
-                    <li class="list-group-item">"Wings of Destiny"	4:28</li>
-                    <li class="list-group-item">"The Dark Tower of Abyss"	6:47</li>
-                    <li class="list-group-item">"Riding the Winds of Eternity"	4:13</li>
-                    <li class="list-group-item">"Symphony of Enchanted Lands"
-                        <ol class="listGroup">
-                            <li class="list-group-item"> "Tharos' Last Flight" </li>
-                            <li class="list-group-item"> II. "Hymn of the Warrior"</li>
-                            <li class="list-group-item"> "Rex Tremende"</li>
-                            <li class="list-group-item">IV. "The Immortal Fire"	13:17</li>
-                        </ol>
-                    </li>
-                </ol>
-            </div>
-        
-		<!-- EXERCISE 5
-            Worst album list! Find out the music you don't really like or you find overrated and list it
-            in this "hall of shame" chart!
-        -->
-        
-            <div class="row col col-12 col-md-6">
-                <a id="worst"></a><div class="album-container worst-container card col col-12 col-md-6 col-lg-4"></a>
-                    <img
+        <div class="container best-and-worst">
+            <div class="row section">
+                <div class="favorite-album-container card col col-12 col-md-6">
+                    <a id="best"> <img
                         class="album-cover card-img-top"
-                        src="images/poo.jpg"
-                    />
-                    <h5 class="album-title">I dont really know</h3>
-                    <p class="album-authors">idk</p>
-                    <p class="album-lenght">too long</p>
-                    <p class="album-genre">is suffering a genre?</p>
+                        src="images/Rhapsody_symphony_of_the_enchanted_lands.jpg"
+                    /></a>
+                    <h5 class="album-title">symphony of the enchanted lands</h3>
+                    <p class="album-authors">Rhapsodhy of Fire</p>
+                    <p class="album-lenght">55:42</p>
+                    <p class="album-genre">Symphonic Metal</p>
+                    <p class="btn btn-primary" data-toggle="collapse" href="#tracks">tracks</p>
+                    <ol id="tracks" class="album-Tracklist list-group ">
+                        <li class="list-group-item">"Epicus Furor" ("Epic Fury")	1:15</li>
+                        <li class="list-group-item">"Emerald Sword"	4:21
+                        <li class="list-group-item">"Wisdom of the Kings"	4:29
+                        <li class="list-group-item">"Heroes of the Lost Valley"
+                            <ol class="list-group">
+                                <li class="list-group-item">"Entering the Waterfalls' Realm"</li>
+                                <li class="list-group-item">"The Dragon's Pride"	2:05</li>
+                            </ol>
+                        </li>
+                        <li class="list-group-item">"Eternal Glory"	7:29 </li>
+                        <li class="list-group-item">"Beyond the Gates of Infinity"	7:23 </li>
+                        <li class="list-group-item">"Wings of Destiny"	4:28</li>
+                        <li class="list-group-item">"The Dark Tower of Abyss"	6:47</li>
+                        <li class="list-group-item">"Riding the Winds of Eternity"	4:13</li>
+                        <li class="list-group-item">"Symphony of Enchanted Lands"
+                            <ol class="listGroup">
+                                <li class="list-group-item"> "Tharos' Last Flight" </li>
+                                <li class="list-group-item"> II. "Hymn of the Warrior"</li>
+                                <li class="list-group-item"> "Rex Tremende"</li>
+                                <li class="list-group-item">IV. "The Immortal Fire"	13:17</li>
+                            </ol>
+                        </li>
+                    </ol>
                 </div>
-                <div class="album-container worst-container card col col-12 col-md-6 col-lg-4">
-                    <img
-                        class="album-cover card-img-top"
-                        src="images/poo.jpg"
-                    />
-                    <h5 class="album-title">I dont really know</h3>
-                    <p class="album-authors">idk</p>
-                    <p class="album-lenght">too long</p>
-                    <p class="album-genre">is suffering a genre?</p>
-                </div>
-                <div class="album-container worst-container card col col-12 col-md-6 col-lg-4">
-                    <img
-                        class="album-cover card-img-top"
-                        src="images/poo.jpg"
-                    />
-                    <h5 class="album-title">I dont really know</h3>
-                    <p class="album-authors">idk</p>
-                    <p class="album-lenght">too long</p>
-                    <p class="album-genre">is suffering a genre?</p>
-                </div>
-                <div class="album-container worst-container card col col-12 col-md-6 col-lg-4">
-                    <img
-                        class="album-cover card-img-top"
-                        src="images/poo.jpg"
-                    />
-                    <h5 class="album-title">I dont really know</h3>
-                    <p class="album-authors">idk</p>
-                    <p class="album-lenght">too long</p>
-                    <p class="album-genre">is suffering a genre?</p>
+            
+            <!-- EXERCISE 5
+                Worst album list! Find out the music you don't really like or you find overrated and list it
+                in this "hall of shame" chart!
+            -->
+            
+                <div class="row col col-12 col-md-6">
+                    <a id="worst"></a><div class="album-container worst-container card col col-12 col-md-6 col-lg-4"></a>
+                        <img
+                            class="album-cover card-img-top"
+                            src="images/poo.jpg"
+                        />
+                        <h5 class="album-title">I dont really know</h3>
+                        <p class="album-authors">idk</p>
+                        <p class="album-lenght">too long</p>
+                        <p class="album-genre">is suffering a genre?</p>
+                    </div>
+                    <div class="album-container worst-container card col col-12 col-md-6 col-lg-4">
+                        <img
+                            class="album-cover card-img-top"
+                            src="images/poo.jpg"
+                        />
+                        <h5 class="album-title">I dont really know</h3>
+                        <p class="album-authors">idk</p>
+                        <p class="album-lenght">too long</p>
+                        <p class="album-genre">is suffering a genre?</p>
+                    </div>
+                    <div class="album-container worst-container card col col-12 col-md-6 col-lg-4">
+                        <img
+                            class="album-cover card-img-top"
+                            src="images/poo.jpg"
+                        />
+                        <h5 class="album-title">I dont really know</h3>
+                        <p class="album-authors">idk</p>
+                        <p class="album-lenght">too long</p>
+                        <p class="album-genre">is suffering a genre?</p>
+                    </div>
+                    <div class="album-container worst-container card col col-12 col-md-6 col-lg-4">
+                        <img
+                            class="album-cover card-img-top"
+                            src="images/poo.jpg"
+                        />
+                        <h5 class="album-title">I dont really know</h3>
+                        <p class="album-authors">idk</p>
+                        <p class="album-lenght">too long</p>
+                        <p class="album-genre">is suffering a genre?</p>
+                    </div>
                 </div>
             </div>
         </div>
